@@ -1,0 +1,109 @@
+var data = []
+
+var dataStr = '1、四鞠大法好<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演:<br>\
+<br>\
+<br>\
+2、四鞠大法好<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+3、四鞠大法好<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+4、四鞠大法好<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+5、四鞠大法好<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+6、林思意<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+7、林思意<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+8、林思意<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+9、林思意<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+10、鞠婧祎<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+11、鞠婧祎<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+12、鞠婧祎<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+13、鞠婧祎<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+<br>\
+<br>\
+14、鞠婧祎<br>\
+<br>\
+导演：<br>\
+编剧：<br>\
+主演：<br>\
+'
+
+var d = dataStr.split('<br><br><br>')
+for(var i=0,len=d.length;i<len;i++){
+	var c = d[i].split('<br><br>')
+	data.push({
+		img:c[0].split('、')[0]+'.jpg',
+		caption:c[0].split('、')[1],
+		desc:c[1]
+	})
+}
